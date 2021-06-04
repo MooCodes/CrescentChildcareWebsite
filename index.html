@@ -15,14 +15,14 @@
         <nav id="navbar">
             <ul>
                 <li>Home</li>
-                <li>Programs</li>
+                <li>Learning</li>
                 <li>About Us</li>
                 <li>Contact</li>
             </ul>
         </nav>
         <div id="banner">
             <div id="logo">
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.jpg" alt="">
             </div>
             <div id="site-name">
                 <span id="sCresc">Crescent</span> <span id="sChild">Childcare</span>
@@ -31,28 +31,86 @@
         <h2>Home Daycare</h2>
         <div id="content">
             <div id="home">
-                <!--todo message (make it original)-->
-                <div id="message">
-                    <span>Crescent Childcare is a child care center, licensed by the State of Illinois, dedicated to providing a safe,
-                    pleasant environment in which children can prosper and grow both physically and intellectually with the proper daily
-                    stimulation and guidance.</span>
-                </div>
                 <!-- image carousel example https://www.w3docs.com/tools/code-editor/3720 -->
-                <div id="two-halves">
-                    <div id="left-half">
-                        <h3>What We Do</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eos repellendus ipsum adipisci magni harum, sed eum assumenda consectetur sint aut vero illo libero doloribus laborum dolores minima nobis facilis.</p>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="img/carousel/stock1.jpg" style="width:100%">
                     </div>
-                    <div id="right-half">
-                        <h3>Crescent Childcare News Update!</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae corrupti enim atque voluptatum quaerat sint vitae modi? Tenetur quisquam corporis, ea inventore nihil laudantium dicta deleniti qui ullam ab. Harum?</p>
+                    <div class="mySlides fade">
+                        <img src="img/carousel/stock2.jpg" style="width:100%">
                     </div>
+                    <div class="mySlides fade">
+                        <img src="img/carousel/stock3.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!--message-->
+                <div id="message">
+                    <span>Crescent Childcare is a home daycare center, licensed by the State of Illinois, dedicated to providing a high quality, nurturting, and safe learning
+                        environment for your child that will help him/her grow into a wonderful, curious, and happy person.
+                    </span>
+                    <h3>Mission</h3>
+                    <p>We provide a secure and safe learning environment for all children that encourages self-expression (care for self) and
+                    group responsibility (care for others); offers an arena through which your children may discover and express their
+                    personal potential through exploration and experimentation. It is important for parents to feel good about bringing
+                    their children to a safe and nourishing environment. It is our privilege to assure that every child experiences these
+                    basic rights.</p>
                 </div>
             </div>
         </div>
     </div>
     <footer>
         <span>COPYRIGHT 2021. CRESCENT CHILDCARE, ALL RIGHTS RESERVED.</span>
+        <span style="margin-top: 10px;">Website Designed By Ali Baig</span>
     </footer>
+
+    <!--carousel code-->
+    <script>
+        let slideIndex = 1
+
+        let plusSlides = (n) => {
+            showSlides(slideIndex += n)
+        }
+        let currentSlide = (n) => {
+            showSlides(slideIndex = n)
+        }
+        let showSlides = (n) => {
+            let i
+            let slides = document.getElementsByClassName("mySlides")
+
+            if (n > slides.length)
+                slideIndex = 1
+            
+            if (n < 1)
+                slideIndex = slides.length
+            
+            for (i = 0; i < slides.length; i++)
+                slides[i].style.display = 'none'
+
+            slides[slideIndex - 1].style.display = "block"
+        }
+
+        showSlides(slideIndex)
+    </script>
+
+    <!--additional carousel code for making it automatic-->
+    <script>
+        showAutoSlides();
+        function showAutoSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showAutoSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>
