@@ -16,7 +16,7 @@ body {
     display: table;
     margin: 0 auto;
     width: 60%;
-    height: 1100px;
+    height: fit-content;
     background-color: #FBFFF1;
     border-radius: 5px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -89,7 +89,7 @@ h2 {
     text-align: center;
 }
 
-h3 {
+#message h3 {
     text-align: center;
     letter-spacing: .1rem;
     color: #596AFF;
@@ -139,7 +139,7 @@ footer span {
 
 .mySlides img {
     vertical-align: middle;
-    max-height: 500px;
+    height: 500px;
 }
 
 .slideshow-container {
@@ -212,6 +212,50 @@ footer span {
         font-size: 11px
     }
 }
+
+#home {
+    display: block;
+}
+
+#learning {
+    display: none;
+}
+
+#about {
+    display: none;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#contact {
+    display: none;
+}
+
+#about h3 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: love ya like a sister;
+    font-size: 36px;
+    color: #596AFF;
+}
+
+#about p {
+    line-height: 1.5em;
+}
+
+h4 {
+    font-family: Strait;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+hr {
+    margin-top: -30px;
+    border: 1px solid #b1ab98;
+    border-radius: 5px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
