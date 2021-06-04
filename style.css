@@ -1,0 +1,149 @@
+body {
+    color: #50504e;
+    font-family: Arial;
+    margin-top: 50px;
+    background-image: linear-gradient( 359.8deg,  rgba(252,255,222,1) 2.2%, rgba(182,241,171,1) 99.3% );
+}
+
+#app {
+    display: table;
+    margin: 0 auto;
+    width: 60%;
+    height: 800px;
+    background-color: #FBFFF1;
+    border-radius: 5px;
+}
+
+#navbar {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#navbar ul {
+    font-family: Strait;
+    font-size: 24px;
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    z-index: 1;
+    padding: 24px 24px;
+    margin-right: 5px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #59473A;
+}
+
+#navbar li:hover {
+    color: white;
+    background-color: #F9B104;
+    cursor: pointer;
+}
+
+#banner {
+    display: flex;
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-bottom: -50px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    z-index: 0;
+}
+
+#site-name {
+    text-transform: uppercase;
+    font-family: love ya like a sister;
+    font-size: 4rem;
+}
+
+#sCresc {
+    color: #F83F2D;
+}
+
+#sChild {
+    color: #596AFF;
+}
+
+h2 {
+    margin-left: 100px;
+    margin-top: -5px;
+    color: #9b4eed;
+    font-family: love ya like a sister;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#message {
+    width: 75%;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+#two-halves {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#left-half {
+    width: 50%;
+}
+
+#right-half {
+    width: 50%;
+}
+
+footer {
+    font-family: Strait;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer span {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #app {
+        width: 90%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1700px) {
+    h2 {
+        margin-top: 25px;
+    }
+}
