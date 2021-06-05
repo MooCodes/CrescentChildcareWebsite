@@ -13,6 +13,10 @@ homeLink.addEventListener("click", () => {
     learningDiv.style.display = 'none'
     aboutDiv.style.display = 'none'
     contactDiv.style.display = 'none'
+    homeLink.classList.add('active-link')
+    learningLink.classList.remove('active-link')
+    aboutLink.classList.remove('active-link')
+    contactLink.classList.remove('active-link')
 })
 
 learningLink.addEventListener("click", () => {
@@ -20,6 +24,10 @@ learningLink.addEventListener("click", () => {
     learningDiv.style.display = 'block'
     aboutDiv.style.display = 'none'
     contactDiv.style.display = 'none'
+    learningLink.classList.add('active-link')
+    homeLink.classList.remove('active-link')
+    aboutLink.classList.remove('active-link')
+    contactLink.classList.remove('active-link')
 })
 
 aboutLink.addEventListener("click", () => {
@@ -27,6 +35,10 @@ aboutLink.addEventListener("click", () => {
     learningDiv.style.display = 'none'
     aboutDiv.style.display = 'block'
     contactDiv.style.display = 'none'
+    aboutLink.classList.add('active-link')
+    homeLink.classList.remove('active-link')
+    learningLink.classList.remove('active-link')
+    contactLink.classList.remove('active-link')
 })
 
 contactLink.addEventListener("click", () => {
@@ -34,4 +46,9 @@ contactLink.addEventListener("click", () => {
     learningDiv.style.display = 'none'
     aboutDiv.style.display = 'none'
     contactDiv.style.display = 'block'
+
+    contactLink.classList.add('active-link')
+    homeLink.classList.remove('active-link')
+    aboutLink.classList.remove('active-link')
+    learningLink.classList.remove('active-link')
 })

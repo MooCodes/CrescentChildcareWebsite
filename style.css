@@ -91,7 +91,7 @@ h2 {
 
 #message h3 {
     text-align: center;
-    letter-spacing: .1rem;
+    letter-spacing: .05rem;
     color: #596AFF;
     margin-bottom: -10px;
 }
@@ -215,10 +215,14 @@ footer span {
 
 #home {
     display: block;
+    margin-bottom: 50px;
 }
 
 #learning {
     display: none;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 #about {
@@ -230,6 +234,9 @@ footer span {
 
 #contact {
     display: none;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 #about h3 {
@@ -254,6 +261,11 @@ hr {
     margin-top: -30px;
     border: 1px solid #b1ab98;
     border-radius: 5px;
+}
+
+.active-link {
+    color: white;
+    background-color: #F9B104;
 }
 
 
