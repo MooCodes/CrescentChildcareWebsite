@@ -34,13 +34,19 @@
                 <!-- image carousel from https://www.w3docs.com/tools/code-editor/3720 -->
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <img src="img/carousel/stock1.jpg" style="width:100%">
+                        <img src="img/carousel/stock3.jpg" style="width:100%">
                     </div>
                     <div class="mySlides fade">
                         <img src="img/carousel/stock2.jpg" style="width:100%">
                     </div>
                     <div class="mySlides fade">
-                        <img src="img/carousel/stock3.jpg" style="width:100%">
+                        <img src="img/carousel/stock1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/carousel/stock4.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/carousel/stock5.jpg" style="width:100%">
                     </div>
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -73,10 +79,36 @@
                 children in the early childhood setting for more than 10 years. In addition to my daycare experience, I am the mother of
                 three children—all of whom have succeeded outstandingly in their educational pursuits. My daughter graduated college
                 from Yale University and graduated from medical school at Harvard University. My oldest son is a CPA, and my youngest son is a software engineer.</p>
-                <h4>Testimonials</h4>
+                <h4 style="margin-bottom: 10px;">Testimonials</h4>
+                <p>Asima, the owner of Crescent, is absolutely wonderful. When I suddenly needed a caregiver for my toddler because my
+                    mother-in-law had to
+                    travel overseas, I contacted Asima to see if she could temporarily take care of my child. She was quick to respond
+                    and exceptionally warm
+                    in her welcome. I got to visit her home the next day and was impressed by the sheer quantity of learning materials
+                    and toys.
+                    My daughter didn't want to leave! We decided to keep our child under Asima's care and are so glad for this decision.
+                    My daughter loved her
+                    experience there and we are definitely coming back when we need more childcare!
+                </p>
+                <p style="margin-top: -15px; margin-left: 20px;">- Lola</p>
+                <p>Asima, the owner and care giver, is very respectful of our wishes as parents. She also very clearly loves the children she watches.
+                I appreciate the cirriculum, while also maintaining a "learn from doing" mentalility (allowing kids to learn from activities outdoors, etc).
+                Asima is flexible to our needs and circumstances, making her very easy to work with.
+                </p>
+                <p style="margin-top: -15px; margin-left: 20px;">- Nicole</p>
             </div>
             <div id="contact">
-
+                <h3>Contact Us</h3>
+                <hr>
+                <img src="img/home.PNG" style="width: 100%; margin-top: 10px;" alt="">
+                <div id="map"></div>
+                <div id="contact-details">
+                    <span class="contact-info">Crescent Childcare Home Daycare</span>
+                    <span class="contact-info">3278 Westview Drive</span>
+                    <span class="contact-info">Northbrook, IL 60062</span>
+                    <span id="email"><a href="mailto:crescentchildcare@gmail.com" style="text-decoration: none; font-weight: bold;">CrescentChildcare@gmail.com</a></span>
+                    <span id="phone"><a href="tel:7739686666" style="text-decoration: none; font-weight: bold;">(773) 968-6666</a></span>
+                </div>
             </div>
         </div>
     </div>
@@ -133,5 +165,18 @@
             setTimeout(showAutoSlides, 5000); // Change image every 2 seconds
         }
     </script>
+
+    <script>
+        let map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 42.091110, lng: -87.860750 },
+                zoom: 16,
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz-pneA8yCKJJjSrrBwxnwnQk3AeLs2aU&callback=initMap"
+        async></script>
 </body>
 </html>

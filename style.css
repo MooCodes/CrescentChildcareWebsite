@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     width: 60%;
     height: fit-content;
-    background-color: #FBFFF1;
+    background-color: white;
     border-radius: 5px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -41,7 +41,6 @@ body {
 #navbar li {
     z-index: 1;
     padding: 24px 24px;
-    margin-right: 5px;
     white-space: nowrap;
     text-transform: uppercase;
     color: #59473A;
@@ -49,7 +48,7 @@ body {
 
 #navbar li:hover {
     color: white;
-    background-color: #F9B104;
+    background-color: rgba(182,241,171,1);
     cursor: pointer;
 }
 
@@ -91,7 +90,6 @@ h2 {
 
 #message h3 {
     text-align: center;
-    letter-spacing: .05rem;
     color: #596AFF;
     margin-bottom: -10px;
 }
@@ -116,6 +114,31 @@ h2 {
 
 #right-half {
     width: 50%;
+}
+
+#map {
+    height: 250px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#contact-details {
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50%;
+}
+
+.contact-info {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#email, #phone{
+    display: block;
+    margin-top: 20px;
 }
 
 footer {
@@ -239,7 +262,7 @@ footer span {
     margin-bottom: 50px;
 }
 
-#about h3 {
+#about h3, #contact h3 {
     margin-top: 50px;
     text-align: center;
     font-family: love ya like a sister;
@@ -265,7 +288,7 @@ hr {
 
 .active-link {
     color: white;
-    background-color: #F9B104;
+    background-color: rgba(182,241,171,1);
 }
 
 
@@ -292,7 +315,10 @@ hr {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1400px) {
+    #navbar {
+        margin-bottom: 25px;
+    }
     h2 {
         margin-top: 25px;
     }
