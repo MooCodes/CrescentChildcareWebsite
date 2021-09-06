@@ -1,10 +1,10 @@
 const homeDiv = document.querySelector("#home")
-const learningDiv = document.querySelector("#learning")
+const learningDiv = document.querySelector("#program")
 const aboutDiv = document.querySelector("#about")
 const contactDiv = document.querySelector("#contact")
 
 const homeLink = document.querySelector("#homeLink")
-const learningLink = document.querySelector("#learningLink")
+const learningLink = document.querySelector("#programLink")
 const aboutLink = document.querySelector("#aboutLink")
 const contactLink = document.querySelector("#contactLink")
 

@@ -79,7 +79,7 @@ body {
     color: #596AFF;
 }
 
-h2 {
+h1 {
     margin-left: 100px;
     margin-top: -5px;
     color: #9b4eed;
@@ -88,7 +88,7 @@ h2 {
     text-align: center;
 }
 
-#message h3 {
+#message h2 {
     text-align: center;
     color: #596AFF;
     margin-bottom: -10px;
@@ -241,7 +241,7 @@ footer span {
     margin-bottom: 50px;
 }
 
-#learning {
+#program {
     display: none;
     width: 75%;
     margin: 0 auto;
@@ -262,7 +262,7 @@ footer span {
     margin-bottom: 50px;
 }
 
-#about h3, #contact h3 {
+#about h2, #contact h2, #program h2 {
     margin-top: 50px;
     text-align: center;
     font-family: love ya like a sister;
@@ -270,11 +270,11 @@ footer span {
     color: #596AFF;
 }
 
-#about p {
+#about p, #program p {
     line-height: 1.5em;
 }
 
-h4 {
+h3 {
     font-family: Strait;
     font-size: 24px;
     margin-bottom: -10px;
@@ -319,7 +319,7 @@ hr {
     #navbar {
         margin-bottom: 25px;
     }
-    h2 {
+    h1 {
         margin-top: 25px;
     }
 }

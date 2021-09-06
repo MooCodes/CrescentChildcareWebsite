@@ -15,7 +15,7 @@
         <nav id="navbar">
             <ul>
                 <li class="active-link" id="homeLink">Home</li>
-                <li id="learningLink">Learning</li>
+                <li id="programLink">Program</li>
                 <li id="aboutLink">About Us</li>
                 <li id="contactLink">Contact</li>
             </ul>
@@ -28,7 +28,7 @@
                 <span id="sCresc">Crescent</span> <span id="sChild">Childcare</span>
             </div>
         </div>
-        <h2>Home Daycare</h2>
+        <h1>Home Daycare</h1>
         <div id="content">
             <div id="home">
                 <!-- image carousel from https://www.w3docs.com/tools/code-editor/3720 -->
@@ -57,7 +57,7 @@
                     <span>Crescent Childcare is a home daycare center, licensed by the State of Illinois, dedicated to providing a high quality, nurturting, and safe learning
                         environment for your child that will help him/her grow into a wonderful, curious, and happy person.
                     </span>
-                    <h3>Mission</h3>
+                    <h2>Mission</h2>
                     <p>We provide a secure and safe learning environment for all children that encourages self-expression (care for self) and
                     group responsibility (care for others); offers an area through which your children may discover and express their
                     personal potential through exploration and experimentation. It is important for parents to feel good about bringing
@@ -65,13 +65,32 @@
                     basic rights.</p>
                 </div>
             </div>
-            <div id="learning">
-
+            <div id="program">
+                <h2>Program</h2>
+                <hr>
+                <h3>Program</h3>
+                <p>Our program varies to fit the needs of you and your child. We provide high-quality full-time childcare for children and
+                infants, newborn through 12 years. Breakfast, lunch, and snacks are prepared in accordance with federal food guidelines
+                and are served to the children “family style”. Activities are scheduled but we often follow child-initiated activities
+                to encourage curiosity and wonderment of life.</p>
+                <h3>Cirriculum</h3>
+                <p>Our weekly activities are well balanced for group and free play, and consist of learning activities that will help your
+                child develop his/her emotional, physical, intellectual, and social skills. In the morning we allow about an hour of
+                free play before going into circle time. Circle time consists of music and movement followed by a story. Next, we move
+                into the kitchen for our preschool lessons, which include science, Spanish, math, writing, and art activities before we
+                transition them back into free play.
+                
+                In the summer our program is geared towards being outside and enjoying the sun. We go for walks, use water tables, have
+                bubbles, ride bikes, and have picnic lunches in the backyard on child-sized picnic tables.
+</p>
             </div>
             <div id="about">
-                <h3>About Us</h3>
+                <h2>About Us</h2>
                 <hr>
-                <h4>Asima Baig - Director</h4>
+                <p>My goal is to provide a high quality, nurturing, and safe learning environment for your child that will help him/her
+                grow into a wonderful, curious, and happy person. I maintain a structured daily program with regards to scheduled meals,
+                rest periods, and activities because I believe children thrive best when their lives are organized.</p>
+                <h3>Asima Baig - Director</h3>
                 <p>I hold a Master’s degree in social science and a Bachelor’s degree in education. I also possess an associate’s degree
                 in Early Childhood Education from Oakton Community College. I was also recognized as a President’s Scholar each
                 semester. In addition, I have a Preschool Certificate for children 3-5 years of age and received my state credentials
@@ -79,7 +98,7 @@
                 children in the early childhood setting for more than 10 years. In addition to my daycare experience, I am the mother of
                 three children—all of whom have succeeded outstandingly in their educational pursuits. My daughter graduated college
                 from Yale University and graduated from medical school at Harvard University. My oldest son is a CPA, and my youngest son is a software engineer.</p>
-                <h4 style="margin-bottom: 10px;">Testimonials</h4>
+                <h3 style="margin-bottom: 10px;">Testimonials</h3>
                 <p>Asima, the owner of Crescent, is absolutely wonderful. When I suddenly needed a caregiver for my toddler because my
                     mother-in-law had to
                     travel overseas, I contacted Asima to see if she could temporarily take care of my child. She was quick to respond
@@ -98,7 +117,7 @@
                 <p style="margin-top: -15px; margin-left: 20px;">- Nicole</p>
             </div>
             <div id="contact">
-                <h3>Contact Us</h3>
+                <h2>Contact Us</h2>
                 <hr>
                 <img src="img/home.PNG" style="width: 100%; margin-top: 10px;" alt="">
                 <div id="map"></div>
@@ -114,7 +133,7 @@
     </div>
     <footer>
         <span>COPYRIGHT 2021. CRESCENT CHILDCARE, ALL RIGHTS RESERVED.</span>
-        <span style="margin-top: 10px;">Website Designed By Ali Baig</span>
+        <!-- <span style="margin-top: 10px;">Website Designed By Ali Baig</span> -->
     </footer>
     
     <script src="spa.js"></script>
@@ -169,10 +188,16 @@
     <script>
         let map;
         function initMap() {
+            let latLong = { lat: 42.091110, lng: -87.860750 }
             map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: 42.091110, lng: -87.860750 },
+                center: latLong,
                 zoom: 16,
             });
+            new google.maps.Marker({
+                position: latLong,
+                map: map,
+                title: "Crescent Childcare"
+            })
         }
     </script>
 
